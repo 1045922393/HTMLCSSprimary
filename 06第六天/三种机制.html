@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>三种机制</title>
+    <link rel="stylesheet" href="./三种机制.html">
+    <style>
+        dd {
+            width: 900px;
+            
+        }
+
+        img {
+            width: 300px;
+            float: left;
+            margin-right: 10px;
+            margin-top: 1   0px;
+            margin-bottom: 20px;
+        }
+
+        dt,
+        dd {
+            /*float: left;*/
+        }
+        /*.question1{
+            float: left;
+        }
+        span{
+            float: left;
+        }*/
+        question{
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <!--标准流、浮动、定位-->
+    <!--<span>我要浮动</span>-->
+    <dl>
+        <dt class="question1">什么是浮动</dt>
+        <dd>让元素漂浮，脱离标准流</dd>
+    </dl>
+    <dl>
+        <dt>为什么要有浮动</dt>
+        <dd>表达能力的培养 表达能力，是当众说话最重要的条件之一。 我一直觉得，培养表达能力，一定要从“大声朗读”入手练习。只要每天坚持做这个训练，一个月时间就足以初见成效。 表达的流畅与否，很大程度是取决于你脑海中积存的语言板块有多少。语言板块多，你表达自然流利；板块少，自然有话说不出来。所谓“搜索枯肠”的苦，说的就是这种无力感。
+            所以为了让你脑海中的语言板块
+            <img src="../001林允儿.jpg">
+            丰厚起来，朗读就是其中一种手段。当你大声朗读的时候，文章里的语言就会逐渐输入到大脑里面；文中的表达方式，随着你不断的重复朗读，也会慢慢变成你自己的表达方式。学习英文也是同样理由。
+            这个过程，不但是“语言输入”的积累，更是口头发声能力的“输出”。因为当你坚持大声朗读，你的口腔肌肉肯定会得到锻炼。一旦你把一篇磕磕碰碰的文章读得顺畅流利，你以前“谨小慎微”的说话，就会变成“字正腔圆”的大方表达。别人听起来你的话，也会觉得悦耳舒服。很多主持人要念绕口令来锻炼口腔，要的就是这种效果。
+            没有人喜欢阴气沉沉，含糊不清的说话方式的，大声朗读就是让自己说话时候的“精气神”得到展现，说话充满热情，而不是闪闪缩缩，毫无底气的感觉。
+        </dd>
+    </dl>
+    <dl>
+        <dt>浮动的使用</dt>
+        <dd>float: left;让元素向左漂浮。</dd>
+        <dd>float: right;让元素向右漂浮。</dd>
+    </dl>
+    <dl>
+        <dt>浮动的特点</dt>
+        <dd>脱标：脱离标准流，不占标准流的位置。</dd>
+        <dd>浮动改变行内元素显示方式为行内块元素</dd>
+    </dl>
+    <question>问题：如果行内元素浮动了变成了行内块，而块级元素浮动后也具有了行内块元素特性，那如何证明行内元素浮动后就是行内块而不是块级元素呢？？？</question>
+    <question>问题：如果行内元素浮动了变成了行内块，而块级元素浮动后也具有了行内块元素特性，那如何证明行内元素浮动后就是行内块而不是块级元素呢？？？</question>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择器</title>
+    <style> 
+        .div .p1{
+        color:red;
+    }
+    .div>.span>.p4{
+        color:blue;
+    }
+    .p2,
+    .p5{
+        color:aqua;
+    }
+    div.p5{
+        font-size:39px;
+    }
+    div[class="p1"]{
+        font-size:49px;
+    }
+    div[name]{
+        font-style:italic;
+    }
+    div[class^="p"]{
+        font-weight:700;
+    }
+    div[name$="pp"]{
+        height:70px;
+    }
+    div.p2+span.p3{
+        display:inline-block;
+        height:100px;
+    }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="span">
+            <div class="p1">哈哈哈哈</div>
+            <div class="p2">哈哈哈哈哈</div>
+            <span class="p3">哈哈哈哈哈哈</span>
+            <div class="p3">哈哈哈哈哈哈</div>
+            <div class="p4" name="哈哈哈">哈哈哈哈哈哈哈</div>
+            <div class="p5">哈哈哈哈哈哈哈哈</div>
+            <div class="p5pp" name="pp">哈哈哈哈哈哈哈哈</div>
+        </div>
+    </div>
+    <div class="div">
+        <div class="span">
+            <div class="p1">嘻嘻</div>
+            <div class="p2">嘻嘻嘻嘻</div>
+            <div class="p3">嘻嘻嘻嘻嘻嘻</div>
+            <div class="p4">嘻嘻嘻嘻嘻嘻嘻嘻</div>
+            <div class="p5">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</div>
+            <div class="p5pp" name="fsdfpp">嘻嘻嘻嘻嘻嘻嘻嘻嘻嘻</div>
+        </div>
+    </div>
+    <div class="div">
+        <div class="span">
+            <div class="p1">好好</div>
+            <div class="p2" name="哈哈哈">好好好好</div>
+            <div class="p3">好好好好好好</div>
+            <div class="p4">好好好好好好好好</div>
+            <div class="p5">好好好好好好好好好好</div>
+            <div class="p5pp" name="fsdfpp">好好好好好好好好好好</div>
+        </div>
+    </div>
+    <p class="p5">干扰</p>
+    </body>
+</html>

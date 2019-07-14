@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凹凸显示</title>
+    <style> 
+        body {
+            background-color: gray;
+            font-size: 200px;
+            color: grey;
+        }
+        div:first-child{
+            text-shadow: 2px 2px 2px black,
+            -2px -2px 2px white;
+        }
+        div:last-child{
+            text-shadow: 2px 2px 2px white,
+            -2px -2px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div>这是凸显</div>
+    <div>这是凹显</div>
+</body>
+</html>

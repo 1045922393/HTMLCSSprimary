@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.clearfix::after {
+    content: ".";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.clearfix {
+    *zoom: 1;
+}
+ul {
+    list-style: none;
+}
+.w{
+    width: 750px;
+    margin: 0 auto;
+}
+.background {
+   
+   background: url("../images/banner_bg.jpg") repeat top; 
+}
+.head .nav ul {
+    width: 750px;
+    background: url("../images/button1_bg.jpg") repeat left;
+}
+.head .nav li {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background: url("../images/button1.jpg") no-repeat left;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.head .nav li a {
+	font-size: 12px;
+}
+.head .nav li:hover{
+   background: url("../images/button2.jpg") no-repeat left;
+    
+}
+.head .nav li:hover a {
+    color: white;
+}

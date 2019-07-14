@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            * {
+            box-sizing: border-box;   
+            margin: 0;
+            padding: 0;
+        }
+
+        .father {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: pink;
+            display: flex;
+            /*flex-direction: column;*/
+        }
+
+        .son1 {
+            flex: 1;
+            /*width: 200px;*/
+            /*margin: 10px auto;*/
+            /*margin: 25px;*/
+            background-color: black;
+             /*box-sizing: border-box; */
+        }
+
+        .son2 {
+            flex: 1;
+            
+            padding: 30px;
+            background-color: blue;
+            /*box-sizing: border-box; */
+            /*box-sizing: content-box;*/
+        }
+
+        .father2 {
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+            background-color: pink;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .girl1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .girl2  {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            
+        }
+        .girl3 {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+        }
+        .girl4 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son1">打扰</div>
+        <div class="son2"></div>
+    </div>
+
+    <hr>
+
+    <div class="father2">
+        <div class="girl1"></div>
+        <div class="girl2"></div>
+        <div class="girl3"></div>
+        <div class="girl4"></div>
+    </div>
+    <!-- 每一行的上下距离以最大的为准 -->
+
+</body>
+
+</html>

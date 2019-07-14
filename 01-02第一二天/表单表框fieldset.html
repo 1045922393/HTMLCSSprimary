@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fieldset</title>
+</head>
+<body>
+    <form action="林允儿.jpg">
+        <fieldset>
+        <!--<fieldset>这个标签可以把表单画出一个领域出来-->
+            <legend>这是个什么鬼表格</legend>  <!--这个标签可以在表单线上注明表单名字-->
+            <label>姓名：<input type="text" placeholder="请输入姓名" required><br></label>
+            <label>电话：<input type="tel" required><br></label>
+            <label>邮箱：<input type="email" required><br>
+            所属学院：
+            <select name="学院" id="xueyuan">
+                <option></option>
+                <option>电信学院</option>
+                <option>美术学院</option>
+                <option>音乐学院</option>
+                <option>教育学院</option>
+            </select><br></label>
+            <label>所属学院：<input type="text" list="123">
+            <datalist id="123">
+                <option>技术学院</option>
+                <option>电信学院</option>
+                <option>美术学院</option>
+                <option>音乐学院</option>
+                <option>教育学院</option>
+            </datalist><br></label>
+           <label>出生年月日：<input type="date"/><br></label>
+           <label>成绩：<input type="number"><br></label>
+          <label> <input type="submit"></label>
+           <label><input type="reset"></label>
+               
+        </fieldset>
+    </form>
+</body>
+</html>

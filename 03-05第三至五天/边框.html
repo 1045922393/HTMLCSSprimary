@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>边框</title>
+        <style> 
+            *{
+                border: none;
+                outline: none;
+            }
+            div{
+                display: inline-block;
+                width: 200px;
+                height: 200px;
+                background-color: grey;
+                border-top: 5px red solid;
+                border-right:5px blue dashed;
+                border-bottom:5px yellow dotted;
+                border-left: green 10px double;
+            }
+            div:hover{
+                background-color: violet;
+            }
+              div:target{
+                background-color: blue;
+                  
+              }
+            span{
+                font-weight: 600;
+
+            }
+            .text1{
+                border: 2px dashed purple;
+                background-color: skyblue;
+                outline: none;
+            }
+             .text1:focus{
+                 background-color: pink;
+             }
+            .text2{
+                border-bottom: 2px dashed red;
+                color:blueviolet;
+            }
+            .text3{
+                border: 2px grey solid;
+                color: red;
+            }
+            .text3:focus,
+            .text2:focus{
+                color: black;
+            }
+            p{  
+                border: 1px red solid;
+                padding: 2em;
+                margin: 2em auto;
+                width: 30em;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="123"></div>
+        <p><span>用户名：</span>
+        <input type="text" class="text1"></p>
+        <p><span>邮  箱：</span>
+        <input type="text" class="text2"></p>
+        <p><span>搜索一下：</span>
+        <input type="text" class="text3" placeholder="请输入..."></p>
+        <p><a href="#123">123321</a></p>
+    </body>
+    </html>

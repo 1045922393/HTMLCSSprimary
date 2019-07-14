@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8" />
+    <title>white-space_CSS参考手册_web前端开发参考手册系列</title>
+    <meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+    <style>
+        .test p {
+            width: 200px;
+            border: 1px solid #000;
+        }
+
+        .normal p {
+            word-wrap: normal;
+        }
+
+        .pre p {
+            white-space: pre;
+        }
+
+        .pre-wrap p {
+            white-space: pre-wrap;
+        }
+
+        .pre-line p {
+            white-space: pre-line;
+        }
+
+        .nowrap p {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="test">
+        <li class="normal">
+            <strong>normal：</strong>
+            <p>轻       轻               地       我走了 正如我轻轻地来
+            </p>
+            <!-- 换行，缩紧空格 -->
+        </li>
+        <li class="pre">
+            <strong>pre：</strong>
+            <p>轻        宿舍     宿舍   轻地   我走了（这里接很多的沙发斯蒂芬的方式士大夫撒地方测试文字） 正如我轻轻地来
+            
+            
+            
+            
+
+
+
+
+            
+            
+            
+            </p>
+            <!-- 不换行 保留空格 -->
+        </li>
+        <li class="pre-wrap">
+            <strong>pre-wrap：</strong>
+            <p>轻轻地   我走   了（这里接很多水电费是打发撒的发是打发个萨达富士达测试文字） 正如我轻轻地来
+            
+
+
+            
+            
+            
+            
+            </p>
+            <!-- 换行,保留空格 -->
+        </li>
+        <li class="pre-line">
+            <strong>pre-line</strong>
+            <p>轻轻地我走了（这里接很多测是士大夫士大夫撒旦法是打发的飞洒发送富       士达试文字）           正如我轻轻地来
+            </p>
+            <!-- 换行，缩紧空格-->
+        </li>
+        <li class="nowrap">
+            <strong>nowrap：</strong>
+            <p>轻轻地我走了正如我轻轻地来
+            </p>
+            <!-- 不换行 -->
+        </li>
+    </ul>
+</body>
+
+</html>

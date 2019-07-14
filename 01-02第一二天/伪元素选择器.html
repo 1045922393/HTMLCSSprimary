@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>伪元素</title>
+        <style>
+            div::first-letter{
+                color:red;
+            }
+           div::first-line {
+                color: blue;
+            }
+            div{
+                letter-spacing: 1px;
+                width: 230PX;
+
+            }
+            div::before {
+                content: "今日2019年05月27日日记："
+            }
+            div::after {
+                content: "在奋斗的年龄，听到一首《南山南》，难免会有点唏嘘。"
+            }
+             
+            
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

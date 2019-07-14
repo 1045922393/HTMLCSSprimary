@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            margin: 50px auto;
+            width: 600px;
+            height: 300px;
+            /*border: 1px solid;*/
+            overflow: hidden;
+        }
+        ul {
+            animation: going 20s infinite linear;
+            width: 6000px;
+        }
+        .clearfix {
+            clear: both;
+
+        }
+        li {
+            float: left;
+            list-style: none;
+            width: 600px;
+            height: 300px;
+            background: linear-gradient(45deg, #000, #f00 50%, #090);    
+           
+        }
+         ul:hover{
+             animation-play-state: paused;
+         }
+        li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes going {
+            0%{
+                transform: translateX(0px);
+            }
+            5% {
+                transform: translateX(-10%);
+            }
+            20% {
+                transform: translateX(-10%);
+            }
+            25% {
+                transform: translateX(-20%);
+            }
+            40% {
+                transform: translateX(-20%);
+            }
+            45% {
+                transform: translateX(-30%);
+            }
+            60% {
+                transform: translateX(-30%);                
+            }
+            65% {
+                transform: translateX(-40%);                               
+            }
+            80% {                
+                transform: translateX(-40%);                
+            }
+            85% {
+                transform: translateX(-50%);                
+            }
+            100% {    
+                transform: translateX(-50%);                
+                /*transform: translateX(-900px);*/
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="001.jpg" alt=""></li>
+            <li><img src="002.jpg" alt=""></li>
+            <li><img src="003.jpg" alt=""></li>
+            <li><img src="004.jpg" alt=""></li>
+            <li><img src="005.jpg" alt=""></li>
+            <!--<li><img src="006.png" alt=""></li>-->
+            <li><img src="001.jpg" alt=""></li>
+            <li><img src="002.jpg" alt=""></li>
+            <li><img src="003.jpg" alt=""></li>
+            <li><img src="004.jpg" alt=""></li>
+            <li><img src="005.jpg" alt=""></li>
+            <!--<li><img src="006.png" alt=""></li>-->
+            <div class="clearfix"></div>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,22 @@
+li:nth-child(8){
+            color:red;
+        }
+        li:first-child{
+            color:pink;
+        }
+        /*li:last-child{
+            color:blue;
+        }*/
+        li:nth-child(n+17){
+            color:blue;
+        }
+        li:nth-last-child(11){
+            color:purple;
+        }
+        li:nth-child(12),
+        li:nth-child(13),
+        li:nth-child(14),
+        li:nth-child(15){
+            color:skyblue;
+        }
+                        

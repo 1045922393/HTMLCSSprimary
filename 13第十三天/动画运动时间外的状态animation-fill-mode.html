@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8" />
+    <title>animation-fill-mode_CSS参考手册_web前端开发参考手册系列</title>
+    <meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+    <style>
+        h1 {
+            font-size: 16px;
+        }
+
+        li {
+            padding: 10px;
+        }
+
+        span {
+            display: block;
+            width: 80px;
+            height: 80px;
+            padding: 10px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(204, 102, 0, .8);
+            background: #F6D66E;
+            background: linear-gradient(to bottom, #fff, #F6D66E);
+        }
+
+        .none span {
+
+            animation: animations 1s ease;
+        }
+
+        @keyframes animations {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(400px);
+            }
+        }
+
+        .forwards span {
+           
+            animation: animations2 1s ease forwards;
+        }
+
+        
+        @keyframes animations2 {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(400px);
+            }
+        }
+
+        .backwards span {
+          
+            animation: animations3 1s ease backwards;
+        }
+
+        
+        @keyframes animations3 {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(400px);
+            }
+        }
+
+        .both span {
+           
+            animation: animations4 1s ease both;
+        }
+
+        
+
+        @keyframes animations4 {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>animation-fill-mode：</h1>
+    <ul>
+        <li class="none">
+            <strong>none: </strong>
+            <span></span>
+        </li>
+        <li class="forwards">
+            <strong>forwards: </strong>
+            <span></span>
+        </li>
+        <li class="backwards">
+            <strong>backwards: </strong>
+            <span></span>
+        </li>
+        <li class="both">
+            <strong>both: </strong>
+            <span></span>
+        </li>
+    </ul>
+</body>
+
+</html>

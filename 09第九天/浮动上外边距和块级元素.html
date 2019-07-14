@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .body {
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            background-color: grey;  float: left;
+        }
+        /*浮动后，外边距塌陷问题不复存在，*/
+        .two {
+            width: 1500px;
+            /*margin-top: 200px;*/
+            /*margin-bottom: 200px;*/
+            /*margin-right: 1000px;*/
+            height: 150px;
+            float: left;
+            background-color: pink;
+            /*position: absolute;
+            top: 50px;
+            left: 50px;*/
+        }
+        .one {
+            width: 1000px;
+            margin-top: 100px;
+            height: 100px;
+            float: left;
+            background-color: black;
+            /*position: relative;
+            top: 50px;
+            left: 50px;*/
+        }
+        
+        .three {
+            width: 1200px;
+            margin-top: -600px;
+            height: 500px;
+            /*float: left;*/
+            background-color: blue;
+        }
+        .four {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            float: left;
+            /*margin-top: 200px;*/
+            /*margin-left: 50%;*/
+            /*transform: translate(-100%,870%);*/
+        }
+        .five {
+            width: 50px;
+            height: 50px;
+            background-color: purple;
+        }
+        span {
+            /*display: flex;*/
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="body">
+        <div class="two"></div>-->
+          <!--<div class="one"></div>-->
+          <!--备注：用了定位的元素在后面定义的就会压在前面定义的元素，与relative和absolute无关-->
+    
+          
+    <!--<div class="four"></div>
+    <div class="three"></div>
+    <div class="five"></div>-->
+    <!--</div>-->
+    <div>
+    <div class="body"></div>
+    <div style="clear: both;"></div></div>
+    <span>sjfosdjfjsoifjoisjlsdkjfljsdklfj</span>
+    <!--<div class="four"></div>-->0
+</body>
+</html>

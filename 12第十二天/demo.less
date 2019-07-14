@@ -1,0 +1,45 @@
+@color: blue;
+@green: green;
+.block() {
+    display:block;
+    width: 100px;
+    height: 100px;
+}
+/*我是可以显示的注释*/
+ul {
+    li {
+        &:nth-child(1) {
+            a {
+                span {
+                    color: @color;
+                }
+            }
+        }
+         &:nth-child(2) {
+            a {
+                span {
+                    color: @green;
+                }
+            }
+        }
+         &:nth-child(3){
+                a{
+                    span{
+                        color: @color;
+                    }
+                }
+        }
+        &:nth-child(4) {
+            a {
+                color: @green;
+                .block();
+                width: 200px;
+                height: 200px;
+                span {
+                    color: @color;
+                    .block();
+                }
+            }
+        }
+    } 
+}

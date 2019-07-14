@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>倒着显示文本</title>
+    <style>
+        /*p{
+              display: block;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 40px;
+                margin-inline-end: 40px;
+        }*/
+        :target{
+            color: red;
+            font-size: 44px;
+        }
+        pre {
+            color: pink;
+            font-size: 60px;
+            font-weight: 700;
+            width: initial
+        }
+        img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!--下面为文本显示方向-->
+    <a href="#test">tap me</a>
+    <bdo dir="rtl">bi-directional override bdo &nbsp;&gt;&lt; rightToleft</bdo>
+    <p dir="rtl">bi-directional override bdo &nbsp;&gt;&lt; rightToleft</p>
+    <bdo>bi-directional override bdo &nbsp;&gt;&lt; rightToleft</bdo>
+    <hr/>
+    <!--长引用和短引用-->
+    <p>下面是长引用</p>
+    <blockquote>
+        我是长长长引用
+        我是长长长引用
+        我是长长长引用
+        我是长长长引用
+        我是长长长引用
+        我是长长长引用
+        我是长长长引用
+    </blockquote>
+    <center>
+        我是居中的文本
+    </center>
+    <hr/>   
+    <table frame="vsides">
+        <!--vsides\hsides\above\below\box-->
+        <thead>
+        <tr>
+            <th>11</th>
+            <th>12</th>
+            <th>13</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+        </tr>  
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td>33</td>
+        </tr> 
+        </tfoot>     
+    </table>
+    <hr/>
+    <pre><a id="test">change me please       sir</a></pre>
+    <hr/>
+    <input type="text" list="datalist-test" size="20">
+    <datalist id="datalist-test">
+        <optgroup label="hao">
+            <option value="hao21">hao2011</option>
+            <option value="hao212">hao2012</option>
+            <option value="hao213">hao2013</option>
+            <option value="hao4">hao2014</option>
+            <option value="hao2">hao2015</option>
+        </optgroup>
+        <optgroup label="buhao">
+            <option value="buhao2011">hao2011</option>
+            <option value="buhao2012">hao2012</option>
+            <option value="buhao2013">hao2013</option>
+            <option value="buhao2014">hao2014</option>
+            <option value="buhao2015">hao2015</option>
+        </optgroup>
+    </datalist>
+    <hr/>
+    <img src="./001林允儿.jpg" alt="丢失" width="200" height="auto">    
+    <hr/>
+</body>
+</html>

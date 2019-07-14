@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cssclass</title>
+    <style>
+        header {
+            width: 960px;
+            /*height: 190px;*/
+            /*background-color: pink;*/
+            margin: 10px auto;
+        }
+        .bg {
+            width: 960px;
+            height: 150px;
+            background: url("./img/banner1.jpg") no-repeat left top,
+            url("./img/banner_bg.jpg") repeat left top;
+        }
+        .nav {
+            width: 960px;
+            height: 32px;
+            /*background-color: blue;*/
+            background: url("./img/button1_bg.jpg") repeat left;
+        }
+        .nav a {
+            float: left;
+            width: 80px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            font-size: 12px;
+            text-decoration: none;
+            background: url("./img/button1.jpg") no-repeat top;
+        }
+        .nav a:nth-child(4) {
+            position: relative;
+        }
+        .nav a img {
+            position: absolute;
+            top: -10px;
+            right: 5px;
+        }
+        .nav a:hover {
+            background: url("./img/button2.jpg") no-repeat top;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bg"></div>
+        <div class="nav">
+            <a href="#">返回首页</a>
+            <a href="#">返回首页</a>
+            <a href="#">返回首页</a>
+            <a href="#">返回首页<img src="./img/hot.png"></a>
+            <a href="#">返回首页</a>
+        </div>
+    </header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cssclass</title>
+    <style>
+        header {
+            width: 960px;
+            /*height: 190px;*/
+            margin: 10px auto;
+            /*background-color: pink;*/
+        }
+        .banner {
+            width: 960px;
+            height: 150px;
+            background: url("./img/banner1.jpg") no-repeat left top,
+            url("./img/banner_bg.jpg") repeat top;
+        }
+        .nav {
+            width: 960px;
+            height: 32px;
+            /*background-color: blueviolet;*/
+            background: url("./img/button1_bg.jpg") repeat left;
+        }
+        .nav a {
+            /*display: block;*/
+            float: left;
+            width: 80px;
+            height: 32px;
+            color: hotpink;
+            text-align: center;
+            line-height: 32px;
+            background: url("./img/button1.jpg") no-repeat left;
+            font-size: 12px;
+        }
+        .nav a:hover {
+            background: url("./img/button2.jpg") no-repeat left;
+        }
+        .nav a:nth-child(3) {
+            position: relative;
+        }
+        .nav img {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner"></div>
+        <div class="nav">
+            <a href="#">导航</a>
+            <a href="#">返回首页</a>
+            <a href="#">网站介绍<img src="./img/hot.png"></a>
+            <a href="#">响起来了</a>
+        </div>
+            
+        
+        
+    </header>
+</body>
+</html>-->
